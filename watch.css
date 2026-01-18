@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+img{
+    height: 50px;
+    width: 100px;
+}
+body{
+    
+    position:relative;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+body::before{
+    content: "";
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:-200px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./ai-generated-9066065.jpg) ;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+.stopwatch{
+    height: 50vh; 
+    width: 50vw;
+    max-width: 560px;
+    max-height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./download.gif);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    margin: 200px auto 0;
+    padding: 40px 0;
+    
+}
+
+.buttons img{
+ cursor: pointer;
+ transition: transform 0.8 ease;
+}
+
+.buttons img:active{
+    transform: scale(1.4);
+}

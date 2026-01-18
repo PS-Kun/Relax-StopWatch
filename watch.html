@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./watch.css">
+</head>
+<body>
+    <audio autoplay loop muted id="bg-audio">
+  <source src="./waterfall-176958.mp3" type="audio/mpeg">
+</audio>
+    <div class="stopwatch">
+        <div ><h1 id="displayTime">00:00:00</h1></div>
+        <div class="buttons">
+            <img src="./pause.png" onclick="watchStop(); audioOff()" > 
+            <img src="./play.png" onclick="watchStart(); audioOn()">
+            <img src="./restart.png" onclick="watchReset(); audioOff()">
+        </div>
+        
+    </div> 
+
+    <script src="./watch.js"></script>
+</body>
+</html>
