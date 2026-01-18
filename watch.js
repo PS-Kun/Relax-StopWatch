@@ -1,14 +1,15 @@
 let [seconds, minutes, hours] = [0,0,0];
 let displayTime = document.getElementById("displayTime");
 let timer = null;
+const audio = document.querySelector('#bg-audio');
 
 
 const audioOn = () => {
-const audio = document.querySelector('#bg-audio').muted = false; 
+audio.muted = false; 
 }
 
 const audioOff = () => {
-document.querySelector('#bg-audio').muted = true; 
+audio.muted = true; 
 }
 
 function stopwatch(){
@@ -47,4 +48,5 @@ function watchReset(){
     [seconds, minutes, hours] = [0,0,0];
     displayTime.innerHTML = "00:00:00";
 }
+
 
